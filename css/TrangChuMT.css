@@ -1,0 +1,148 @@
+﻿
+#hinhnen img{
+    width:150px;
+    height:100px;
+}
+b {
+    font-size:25px;
+    font-family:Andale Mono, monospace;
+}
+h2 {
+    font-family:cursive;
+    font-size:50px;
+    vertical-align:top;
+}
+body{
+    padding:0px;
+    margin: auto auto;
+    background-color:#fff;
+    font-family:Tahoma;
+}
+#mainall {
+    width: 1300px;
+    padding:0px;
+    padding-top:10px;
+    margin: auto auto;
+}
+
+
+
+/*-----------------list link------------------*/
+#cssmenu {
+    background-image:url(http://localhost:56597/DOANWEB2/images/bg.jpg);
+    background-size:cover;
+    float:left;
+    clear:both;
+    width:100%;
+    height:300px;
+    opacity: 0.8; /*mờ bg*/
+}
+    #cssmenu ul {
+        float: left;
+        display: inline-block;  
+    }
+    #cssmenu ul li {
+        list-style:none;
+        float:left;
+        margin: 0 20px 0 0;
+        margin-left:50px;
+        border: 1px solid transparent;
+    }
+        #cssmenu li:hover {
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+    #cssmenu ul li a{
+        text-decoration: none;
+        font-family: 'Segoe UI', sans-serif; 
+        font-weight:bold;
+        padding: 8px 5px 9px 5px;
+        display: block;
+        color: #ffffff;
+        border: 1px solid transparent;
+        font-size: 20px;
+        color:black;
+    }
+        #cssmenu ul li a:hover {
+            color:red;
+            font-family:cursive;
+        }   
+/*--------------content--------------*/
+/*----MUCLUC----*/
+ul, #list {
+  list-style-type: none;
+}
+
+#list {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  cursor: pointer; /*Kiểu hiển thị của con trỏ chuột*/
+  user-select: none; /*Không cho tác động vào chữ*/    
+}
+
+.head::before {
+  content:"+";  /*content: "\25B6";  Kiểu dấu hiển thị ra list*/
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+ /*dùng JavaScript*/ 
+.head-down::before {
+  /*transform: rotate(90deg);*/  /*độ nghiêng của dấu*/
+  content:"-";
+}
+
+.list-item {
+  display: none; 
+}
+    .list-item a {
+        text-decoration: none;
+        color:#23500f;
+        font-size:20px;
+    }
+        .list-item a:hover {
+            color:red;
+        }
+
+ /*hiển thị item (dùng JavaScript)*/ 
+.active {
+  display: block;
+}
+
+/*-----------Chi Tiết------------*/
+#chitiet p img{
+    margin-left:200px;
+}
+#chitiet p a {
+    text-decoration:none;
+    color:#46832a;
+}
+#left {
+    width:300px;
+    float: left;
+    clear:both;
+}
+#right {
+    width:980px;
+    float: right;
+}
+
+
+#footer {
+    margin-top:90%;
+    margin-bottom:20px;
+    padding-left:50px;
+    background-color:#23500f;
+    height:25px;
+    color:#ffffff;
+    border:1px solid black;
+    clear:both;
+}
+
+
+

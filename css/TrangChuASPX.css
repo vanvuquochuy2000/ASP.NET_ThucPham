@@ -1,0 +1,17 @@
+﻿body {
+    height:100%;
+}
+img {
+    width:300px;
+}
+
+#gioithieu table tr td a {
+    font-weight:bolder;
+}
+
+    #gioithieu table tr td a:hover {
+        transform: scale(1.2);
+        box-shadow:5px 5px 5px 4px #1c7227 ;
+    }
+
+

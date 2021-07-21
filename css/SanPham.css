@@ -1,0 +1,10 @@
+﻿
+#table {
+    border: 1px solid #000;
+}
+#hinh {
+    background-image:url(http://localhost:56597/DOANWEB2/images/xanhreu.jpg);
+    font-family: 'Adobe Garamond Pro';
+    color:yellow;
+}
+

@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TrangChu.master.cs" Inherits="TrangChu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/TrangChuMT.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="mainall">
+        <div id="header">
+            <div id="cssmenu">  
+                <h2 id="hinhnen" style="height:100px; width:1000px">Chào <span>Mừng</span> Bạn Tới Bến Tre: Các loại đặc sản xứ dừa Bến Tre</h2>
+                <ul>
+                    <li><a href="TrangChu.aspx">Trang Chủ</a></li>
+                    <li><a href="GioiThieu.aspx">Giới Thiệu Chi Tiết</a></li>
+                    <li><a href="SanPham.aspx">Sản Phẩm</a></li>
+                    <li><a href="DKThanhVien.aspx">Đăng Ký Thành Viên</a></li>
+                </ul>
+            </div>
+            <h2 style="color:#20822d">--Đặc sản Bến Tre</h2>
+            <h3>Đặc sản Bến Tre có gì ngoài DỪA? Tất cả 25 đặc sản Bến Tre đều được tổng hợp trong bài viết này sẽ giúp bạn khám phá hết văn hóa ẩm thực xứ dừa Bến Tre.</h3>
+            <p>Bến Tre nơi được mệnh danh là xứ sở của cây dừa. Với những hàng dừa trải dài thẳng tắp, những con người thân thiện, hiếu khách đã có nhiều năm chung sống 
+               và gắn bó với cây dừa nên ẩm thực nơi đây phần lớn đều được chế biến từ dừa như kẹo dừa, nước dừa, cơm dừa, củ hũ dừa, nước cốt dừa cho đến vị béo ngậy của 
+               đuông dừa và còn rất nhiều các món ăn đặc sản khác từ dừa.</p>
+        </div>
+
+        <div id="content">
+            <div id="left">
+                <ul id="list">
+                    <li><span class="head" style="font-size:20px">Mục Lục</span>
+                        <ul class="list-item">
+                            <li><a href="#01">Bánh tráng Mỹ Lồng</a></li>
+                            <li><a href="#02">Bánh phồng Sơn Đốc</a></li>
+                            <li><a href="#03">Chuối đập</a></li>
+                            <li><a href="#04">Bánh xèo ốc gạo</a></li>
+                            <li><a href="#05">Bánh canh bột xắt</a></li>
+                            <li><a href="#06">Chuột dừa</a></li>
+                            <li><a href="#07">Đuông dừa</a></li>
+                            <li><a href="#08">Cháo cua đồng</a></li>
+                            <li><a href="#09">Kẹo dừa</a></li>
+                            <li><a href="#10">Bì cuốn<a></li>
+                            <li><a href="#11">Rượu dừa</a></li>
+                            <li><a href="#12">Cơm dừa tôm rang</a></li>
+                            <li><a href="#13">Canh chua cá linh bông so đũa</a></li>
+                            <li><a href="#14">Lẩu cháo cua đồng</a></li>
+                            <li><a href="#15">Củ hũ dừa</a></li>
+                            <li><a href="#16">Bánh tráng sữa</a></li>
+                            <li><a href="#17">Bánh xèo củ hủ dừa</a></li>
+                            <li><a href="#18">Gỏi củ hủ dừa</a></li>
+                            <li><a href="#19">Bánh canh hến nước dừa</a></li>
+                            <li><a href="#20">Cơm dừa</a></li>
+                            <li><a href="#21">Cháo dừa</a></li>
+                            <li><a href="#22">Canh gà lá cách</a></li>
+                            <li><a href="#23">Nấm mối nướng muối ớt</a></li>
+                            <li><a href="#24">Tép rang dừa</a></li>
+                            <li><a href="#25">Mắm lóc chưng dừa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <script>
+                    var toggler = document.getElementsByClassName("head");
+                    var i;
+                    for (i = 0; i < toggler.length; i++) {
+                        toggler[i].addEventListener("click", function () {
+                            this.parentElement.querySelector(".list-item").classList.toggle("active");
+                            this.classList.toggle("head-down");
+                        });
+                    }
+                </script>
+            </div>
+            <div id ="right">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    <a href="SanPham.aspx"></a>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer">
+            
+        </div>
+    </div>
+    </form>
+</body>
+</html>
